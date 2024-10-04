@@ -3,13 +3,13 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIALS = credentials('dockerhub-credentials')
-        DOCKER_IMAGE_NAME = 'yourdockerhubusername/my-express-app'
+        DOCKER_IMAGE_NAME = 'andualem12/devops-ci-cd'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/expressjs/express.git', branch: 'main'
+                git url: 'https://github.com/Andualem-Andy/Devops-CI-CD.git', branch: 'main'
             }
         }
 
